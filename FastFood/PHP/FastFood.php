@@ -3,23 +3,23 @@
 
     $FastFood = [
         [   
-            "img" => "McDo.png",
+            "img" => "Mcdoo.jpg",
             "branch" => "McDonald&apos;s",
             "founder" => "Ray Kroc",
             "tagline" => "Good Time, Great Taste",
-            "origin" => "San Bernardino, California",
+            "origin" => "California",
             "best_seller" => ["French Fries","Double Burger","Chicken Nuggets"]
         ],
         [
-            "img" => "KFC.png",
+            "img" => "KFCC.jpg",
             "branch" => "KFC",
-            "founder" => "Colonel Harland Sanders",
+            "founder" => "Harland Sanders",
             "tagline" => "Finger Lickin&apos; Good",
-            "origin" => "Louisville, Kentucky U.S.A",
+            "origin" => "Kentucky U.S.A",
             "best_seller" => ["Fried Chicken","Mac and Cheese","Chicken Sandwich"]
         ],
         [
-            "img" => "jollibee.jpg",
+            "img" => "jollibeee.jpg",
             "branch" => "Jollibee",
             "founder" => "Tony Tan Caktiong",
             "tagline" => "Langhap Sarap",
@@ -27,15 +27,15 @@
             "best_seller" => ["Chicken Joy","Jolly Spaghetti","Peach Mango Pie"]
         ],
         [
-            "img" => "chowking.png",
+            "img" => "chowkingg.jpg",
             "branch" => "Chowking",
             "founder" => "Robert Kuan",
-            "tagline" => "Tikman ang Bagong Sarap",
+            "tagline" => "Tikman ang Tagumpay",
             "origin" => "Philippines",
             "best_seller" => ["Pork Chao Pan","Lauriat","Wanton Mami"]
         ],
         [
-            "img" => "Inasal.png",
+            "img" => "Inasall.jpg",
             "branch" => "Mang Inasal",
             "founder" => "Edgar Sias",
             "tagline" => "The More, The Many-er",
