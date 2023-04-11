@@ -3,7 +3,7 @@
 
     $FastFood = [
         [   
-            "img" => "",
+            "img" => "McDo.png",
             "branch" => "McDonald&apos;s",
             "founder" => "Ray Kroc",
             "tagline" => "Good Time, Great Taste",
@@ -11,7 +11,7 @@
             "best_seller" => ["French Fries","Double Burger","Chicken Nuggets"]
         ],
         [
-            "img" => "",
+            "img" => "KFC.png",
             "branch" => "KFC",
             "founder" => "Colonel Harland Sanders",
             "tagline" => "Finger Lickin&apos; Good",
@@ -19,7 +19,7 @@
             "best_seller" => ["Fried Chicken","Mac and Cheese","Chicken Sandwich"]
         ],
         [
-            "img" => "",
+            "img" => "jollibee.jpg",
             "branch" => "Jollibee",
             "founder" => "Tony Tan Caktiong",
             "tagline" => "Langhap Sarap",
@@ -27,7 +27,7 @@
             "best_seller" => ["Chicken Joy","Jolly Spaghetti","Peach Mango Pie"]
         ],
         [
-            "img" => "Dolittle.jpg",
+            "img" => "chowking.png",
             "branch" => "Chowking",
             "founder" => "Robert Kuan",
             "tagline" => "Tikman ang Bagong Sarap",
@@ -35,12 +35,12 @@
             "best_seller" => ["Pork Chao Pan","Lauriat","Wanton Mami"]
         ],
         [
-            "img" => "JW3.jpg",
-            "branch" => "Mang Inasl",
+            "img" => "Inasal.png",
+            "branch" => "Mang Inasal",
             "founder" => "Edgar Sias",
             "tagline" => "The More, The Many-er",
-            "origin" => "Philippines",
-            "best_seller" => ["Chicken Inasal","Prok Sisig","Halo-Halo"]
+            "origin" => "Philippines",  
+            "best_seller" => ["Chicken Inasal","Pork Sisig","Halo-Halo"]
         ]
 
     ];

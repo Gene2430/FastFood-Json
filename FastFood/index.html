@@ -3,19 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta brand="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastFood</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="img\sample\wp2714490-film-background.jpg" />
-    <title>FastFood Chain COLLECTION</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h2 class="text-center mb-5">FastFood Chain</h2>
-        <div class="row" id="demo"></div>
+    <div class="py-5">
+    <h2 class="text-center mb-5">FastFood Chains</h2>
+    </div> 
+    <div class="container-fluid bg-light">
+        <div class="row justify-content-center" id="demo">
+            <div class="row">
+                <div class="col-lg-10 py-20">
+                    
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <div class="row" id="demo"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="col-md-8">
+        <div class="card-columns text-center" id="demo"></div>
+    </div>
+    
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
     <script>
         var txt = "";
         const xmlhttp = new XMLHttpRequest();
@@ -28,33 +45,32 @@
 
                 for(i = 0; i < FastFood.length;i++){
                     txt += `
-                       
-                                    <div class="col-md-7">
-                                        <div class="card-body">
-                                            <h2 class="card-Branch mb-4">${FastFood[i].branch}</h2>
-                                            <p class="card-text"><b>Founder:</b> ${FastFood[i].founder}</p>
-                                            <p class="card-text"><b>Tagline:</b> ${FastFood[i].tagline}</p>
-                                            <p class="card-text"><b>Origin:</b> ${FastFood[i].origin}</p>
-                                            <p class="card-text"><b>Best Seller:</b></p>         
-                                            <ul class="">`;
-                                                for(j = 0; j < FastFood[i].genre.length; j++){
-                                                    txt += `
-                                                        <li class="">${FastFood[i].genre[j]}</li>
-                                                    `;
-                                                }
-                                                txt += `
-                                            </ul>
-                                        </div>
-                                    
-                    `;
+                    <div class="col-md-2">
+                        <div class="card">
+                            <img class="card-img-top" src="FastFood/Image/${FastFood[i].img}" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">${FastFood[i].branch}</h5>
+                                <p class="card-text"><b>Founder:</b> ${FastFood[i].founder}</p>
+                                <p class="card-text"><b>Tagline:</b> ${FastFood[i].tagline}</p>
+                                <p class="card-text"><b>Origin:</b> ${FastFood[i].origin}</p>
+                                <p class="card-text"><b>Best Seller:</b></p>         
+                                <ul class="">`;
+                                    for(j = 0; j < FastFood[i].best_seller.length; j++){
+                                        txt += `
+                                            <li class="">${FastFood[i].best_seller[j]}</li>
+                                        `;
+                                    }
+                                    txt += `
+                                </ul>
+                            </div>
+                        </div>
+                    </div>`;
                 }
                 document.getElementById("demo").innerHTML = txt;
             }
         }
-        xmlhttp.open("GET", "http://test.test/FastFood.php");
+        xmlhttp.open("GET", "http://php.test/FastFood.php");
         xmlhttp.send();
     </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
 </html>
